@@ -1,0 +1,61 @@
+/*
+ Theme Name:   Swanage Sailing Club
+ Theme URI:    https://generatepress.com
+ Description:  Built of the default GeneratePress child theme
+ Template:     generatepress
+ Author:       K Harris
+ Version:      0.1
+*/
+
+.full-container {
+    margin: 15px;
+}
+
+.f50{
+    float: left;
+    width: 40%;
+    min-width: 250px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1.news {
+    font-size: 2em;
+    padding-top: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.inside-article{
+    margin: 0;
+    padding: 0;
+}
+
+main#main{
+    padding-left: 20px;
+    padding-top: 0;
+}
+
+ul,li {
+    list-style-position:inside;
+    margin:0;
+    padding:0;
+}
+
+h3{
+    margin-top: 1em;
+}
+
+
+.center{
+    text-align: center;
+}
+
+body.login #login h1 a {
+    background-image: none;
+}
