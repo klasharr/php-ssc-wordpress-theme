@@ -11,7 +11,7 @@
     margin: 15px;
 }
 
-.f50{
+.f50 {
     float: left;
     width: 40%;
     min-width: 250px;
@@ -31,28 +31,27 @@ h2 {
     font-weight: bold;
 }
 
-div.inside-article{
+div.inside-article {
     margin: 0;
     padding: 0;
 }
 
-main#main{
+main#main {
     padding-left: 20px;
     padding-top: 0;
 }
 
-ul,li {
-    list-style-position:inside;
-    margin:0;
-    padding:0;
+ul, li {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
 }
 
-h3{
+h3 {
     margin-top: 1em;
 }
 
-
-.center{
+.center {
     text-align: center;
 }
 

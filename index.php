@@ -12,30 +12,32 @@
  *
  * Home page for blog posts
  */
- 
+
 // No direct access, please
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 get_header(); ?>
-	<div id="primary" <?php generate_content_class();?>>
+	<div id="primary" <?php generate_content_class(); ?>>
 		<main id="main" <?php generate_main_class(); ?>>
-				<?php
-				// child theme mod
-				dynamic_sidebar('Above Content Area');
-				?>
-	<h1 class="news inside-article">News</h1>
-				<?php do_action( 'generate_before_main_content' ); ?>
+			<?php
+			// child theme mod
+			dynamic_sidebar( 'Above Content Area' );
+			?>
+			<h1 class="news inside-article">News</h1>
+			<?php do_action( 'generate_before_main_content' ); ?>
 			<?php if ( have_posts() ) : ?>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php
-						/* Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'content', get_post_format() );
+					/* Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
 					?>
 
 				<?php endwhile; ?>
@@ -52,6 +54,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php 
+<?php
 do_action( 'generate_sidebars' );
 get_footer();
