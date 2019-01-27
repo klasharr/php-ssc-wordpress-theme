@@ -1,0 +1,23 @@
+
+body.login div#login {
+    width: 800px;
+}
+
+
+body.login div#login .login-portal-message. form.loginform {
+    width: 75%;
+    margin: auto;
+}
+
+body.login div#login .login-portal-message h1 {
+    padding: 2em;
+}
+
+body.login div#login .login-portal-message h2 {
+    padding-bottom: 1em;
+}
+
+div#jetpack-sso-wrap {
+    display: none;
+}
+
